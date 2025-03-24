@@ -24,7 +24,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"></div>
   <header class="mdl-layout__header-row">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title"> Area and Perimeetr of Rectangle, in Javascript</span>
+      <span class="mdl-layout-title"> Area and Perimeter of Rectangle, in Javascript</span>
     </div>
   </header>
   <main class="mdl-layout__content"></main>
@@ -36,7 +36,7 @@
       <!-- input pattern attribute -->
       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-of-rectangle" />
       <!-- mdl-textfield__label -->
-      <label class="mdl-textfield__label" for="length-of-rectangle">Hours you worked for</label>
+      <label class="mdl-textfield__label" for="answer1">Hours you worked for</label>
       <!-- class "mdl-textfield__error" -->
       <span class="mdl-textfield__error"> Input is not a damn number.</span>
     </div>
@@ -45,20 +45,20 @@
       <!-- input pattern attribute  -->
       <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="width-of-rectangle" />
       <!-- mdl-textfield__label -->
-      <label class="mdl-textfield__label" for="width-of-rectangle">Hourly Wage</label>
+      <label class="mdl-textfield__label" for="answer2"> Hourly Wage</label>
       <!-- class "mdl-textfield__error" -->
       <span class="mdl-textfield__error">Input is not a number.</span>
     </div>
     <br />
     <!-- Raised button with ripple -->
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
-      onclick="calculatePermeterAndAreaOfRectangle()" type="button">
+      onclick="calculatehoursWorkedAndHourlywage()" type="button">
       Calculate
     </button>
   </form>
   <div>
-    <div id="area"></div>
-    <div id="perimeter"></div>
+    <div id="answer1"></div>
+    <div id="answer2"></div>
   </div>
   </main>
   </div>
