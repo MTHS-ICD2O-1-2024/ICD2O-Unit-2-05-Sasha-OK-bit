@@ -8,5 +8,6 @@
  * Displays an alert with the message "Hello, World!"
  */
 function myButtonClicked() {
-  alert("Hello, World!")
+  document.getElementById('pay').innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
+  xx = parseFloat(document.getElementById('length-of-rectangle').value)
 }
