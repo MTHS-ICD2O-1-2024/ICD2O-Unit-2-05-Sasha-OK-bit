@@ -16,7 +16,7 @@ function calculatehoursworkedAndhourlywage() {
   let takeHomeSalary = (hoursWorked * hourlyWage)
   
   document.getElementById('answer1').innerHTML = 
-    `Income Tax: ${formattedPrice.format(Incometax)} <br>
-    take Home Salary: ${formattedPrice.format(takeHomeSalary)}`
+    `Income Tax: ${Incometax.toFixed(2)} <br>
+    take Home Salary: ${takeHomeSalary.toFixed(2)}`
 
 }
