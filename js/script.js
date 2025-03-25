@@ -9,16 +9,14 @@
  */
 function myButtonClicked() {
   // input
-  const hourWorked = parseFloat(document.getElementById('hoursworked').value)
-  const hourlyWage = parseFloat(document.getElementById('hourlywage').value)
-
-  // process
-  let Incometax = (hourWorked * hourlyWage * ONTARIO_INCOME_TAX)
-  let takeHomeSalary = (hourlywage - ONTARIO_INCOME_TAX)
+  const TaxAmount= 0.18 
+  let hourWorked = parseFloat(document.getElementById('hoursworked').value);
+  let hourlyWage = parseFloat(document.getElementById('hourlywage').value);
+  let Incometax = (hourWorked * hourlyWage) * TaxAmount
+  let takeHomeSalary = (hoursWorked * hourlyWage)
   
   document.getElementById('answer1').innerHTML = 
     `Your pay will be: $ ${Incometax.toFixed(2)}`
-  document.getElementById('answer2').innerHTML = 
     `The government will take... $ ${takeHomeSalary.toFixed(2)}`
 
 }
