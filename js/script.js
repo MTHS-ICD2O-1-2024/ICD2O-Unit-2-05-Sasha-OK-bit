@@ -10,8 +10,8 @@
 function calculatehoursworkedAndhourlywage() {
   // input
   const TaxAmount= 0.18 
-  let hourWorked = parseInt(document.getElementById('hours-worked').value);
-  let hourlyWage = parseInt(document.getElementById('hourly-wage').value);
+  const hourWorked = parseInt(document.getElementById('hours-worked').value);
+  const hourlyWage = parseInt(document.getElementById('hourly-wage').value);
   let Incometax = (hourWorked * hourlyWage) * TaxAmount
   let takeHomeSalary = (hoursWorked * hourlyWage)
   
