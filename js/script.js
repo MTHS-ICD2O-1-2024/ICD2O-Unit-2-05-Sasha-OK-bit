@@ -13,7 +13,7 @@ function myButtonClicked() {
   const hourlyWage = parseFloat(document.getElementById('hourlywage').value)
 
   // process
-  let Incometax = (hourWorked * hourlyWage * ONTARIO_INCOME-TAX)
+  let Incometax = (hourWorked * hourlyWage * ONTARIO_INCOME_TAX)
   let takeHomeSalary = (hourlywage - ONTARIO_INCOME_TAX)
   
   document.getElementById('answer1').innerHTML = 
