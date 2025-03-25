@@ -7,7 +7,7 @@
 /**
  * Displays an alert with the message "Hello, World!"
  */
-function myButtonClicked() {
+function calculatehoursworkedAndhourlywage() {
   // input
   const TaxAmount= 0.18 
   let hourWorked = parseFloat(document.getElementById('hoursworked').value);
